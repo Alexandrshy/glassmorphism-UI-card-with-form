@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glassmorphism card</title>
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+    <section class="card glass">
+        <h1 class="h1">Invite people</h1>
+        <p class="description">The invited users will have access to your project</p>
+        <form action="" class="switcher">
+            <ul class="switcher__list">
+                <li class="switcher__item">
+                    <input type="radio" class="switcher__input" id="switcher-email" name="switcher-group" value="email"
+                        checked>
+                    <label for="switcher-email" class="switcher__label">Invite with email</label>
+                </li>
+                <li class="switcher__item">
+                    <input type="radio" class="switcher__input" id="switcher-phone" name="switcher-group" value="phone">
+                    <label for="switcher-phone" class="switcher__label">Invite with phone</label>
+                </li>
+            </ul>
+        </form>
+        <form action="" class="invite">
+            <ul class="invite__list">
+                <li class="invite__item invite__item--email isActive">
+                    <label for="invite-email" class="invite__label">Add new user</label>
+                    <div class="invite__box">
+                        <input type="email" class="invite__input" id="invite-email" placeholder="test@test.com">
+                        <button class="invite__button button">Invite user</button>
+                    </div>
+                </li>
+                <li class="invite__item invite__item--phone">
+                    <label for="invite-email" class="invite__label">Add new user</label>
+                    <div class="invite__box">
+                        <input type="tel" class="invite__input" id="invite-phone" placeholder="+1 (200) 555-5555">
+                        <button class="invite__button button">Invite user</button>
+                    </div>
+                </li>
+            </ul>
+            <p class="reduced">For more information, please use our <a href="#" rel="noopener noreferrer"
+                    target="_blank">instructions</a></p>
+        </form>
+    </section>
+</body>
+
+<script src='./js/index.js'></script>
+
+</html>
